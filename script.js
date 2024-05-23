@@ -175,25 +175,4 @@ function redirectToDomain() {
 }
 
 
-// Function to check login attempts
-function checkAttempts() {
-    // Placeholder function for login attempts checking
 
-    // Example: Add error class to input on error
-    var emailInput = document.getElementById('email');
-    var passwordInput = document.getElementById('password');
-    var errorMessage = document.getElementById('error-message');
-
-    // Check login error condition
-    var hasError = true; // Example error condition, replace with actual condition
-
-    if (hasError) {
-        emailInput.classList.add('error');
-        passwordInput.classList.add('error');
-        errorMessage.textContent = "Incorrect email or password. Please try again."; // Example error message, replace with actual message
-    } else {
-        emailInput.classList.remove('error');
-        passwordInput.classList.remove('error');
-        errorMessage.textContent = "";
-    }
-}
