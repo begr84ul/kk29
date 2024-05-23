@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #faf9f8; /* Microsoft-like background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Microsoft-like font */
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    width: calc(100% - 40px);
+    padding: 40px; /* Adjust the padding as needed */
+    margin-bottom: 28px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+h2 {
+    margin-bottom: 7px;
+    color: #333333; /* Microsoft-like text color */
+    text-align: center; /* Center the heading */
+    font-size: 28px; /* Increase font size */
+}
+
+.xlogo {
+    text-align: center; /* Center the logo */
+    margin-bottom: 30px;
+}
+
+.text-g {
+    color: #333333; /* Microsoft-like text color */
+    font-size: 20px; /* Increase font size */
+}
+
+.input-field {
+    width: calc(100% - 22px); /* Adjusted width to accommodate padding */
+    padding: 20px;
+    border: 2px solid #cccccc; /* Microsoft-like border color */
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 20px; /* Increase font size */
+    color: #333333; /* Microsoft-like text color */
+    margin-bottom: 20px; /* Add spacing between input fields */
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center; /* Center error messages */
+    font-size: 16px; /* Increase font size */
+}
+
+#login-button {
+    width: 100%; /* Make button full width */
+    background-color: #0078d4; /* Microsoft-like blue */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 20px 0; /* Adjust padding to center text vertically */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px; /* Increase font size */
+    transition: background-color 0.3s ease;
+}
+
+#login-button:hover {
+    background-color: #005a9e; /* Darker blue on hover */
+}
+
+.login-message {
+    margin-top: 20px;
+    text-align: center; /* Center login message */
+    font-size: 18px; /* Increase font size */
+}
+
+.encouragement-message {
+    font-size: 20px; /* Increase font size */
+    color: #333333; /* Microsoft-like text color */
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center; /* Center footer content */
+    font-size: 18px; /* Increase font size */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #0078d4; /* Microsoft-like blue */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Existing styles */
+.error {
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
