@@ -54,8 +54,8 @@ h2 {
 }
 
 .error-message {
-    color: red;
-    margin-bottom: 20px;
+    color: rgb(255, 0, 0);
+    margin-bottom: 0%;
     text-align: center; /* Center error messages */
     font-size: 16px; /* Increase font size */
 }
@@ -80,6 +80,7 @@ h2 {
     margin-top: 20px;
     text-align: center; /* Center login message */
     font-size: 18px; /* Increase font size */
+    margin-bottom: 0px;
 }
 
 .encouragement-message {
@@ -87,6 +88,7 @@ h2 {
     color: #000000; /* Microsoft-like text color */
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .footer {
@@ -107,26 +109,3 @@ h2 {
 .footer a:hover {
     text-decoration: underline;
 }
-/* Existing styles */
-.error {
-    animation: shake 0.4s ease-in-out;
-}
-
-@keyframes shake {
-    0% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-10px);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-    75% {
-        transform: translateX(-10px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
